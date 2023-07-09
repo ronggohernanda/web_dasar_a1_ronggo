@@ -43,6 +43,14 @@ require "controllers/functions.php";
             <tr>
                 <td><?= $b["id"]; ?></td>
                 <td><?= $b["judul_buku"]; ?></td>
+                <td><?= $b["tahun_terbit"] ?></td>
+                <td><?= $b["penulis"] ?></td>
+                <td><?= $b["penerbit"] ?></td>
+                <td><?= $b["edit"] ?></td>
+                <td>
+                    <a href="edit.php?id=<?= $b["id"] ?>">Edit</a>
+                    <a href="hapus.php">Hapus</a>
+                </td>
             </tr>
         <?php endforeach;
         ?>

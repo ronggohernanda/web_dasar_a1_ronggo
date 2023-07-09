@@ -9,7 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Website Saya</title>
 
-
+    <link rel="stylesheet" href="style.css">
 
 </head>
 
@@ -20,7 +20,7 @@
         <a href="buku.php">
             <li>Halaman Buku</li>
         </a>
-        <a href="pinjambuku.php">
+        <a href="pinjam.php">
             <li>Pinjam Buku</li>
         </a>
     </ul>
