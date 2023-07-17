@@ -48,13 +48,23 @@ require "controllers/functions.php";
                 <td><?= $b["penerbit"] ?></td>
                 <td><?= $b["edit"] ?></td>
                 <td>
-                    <a href="edit.php?id=<?= $b["id"] ?>">Edit</a>
-                    <a href="hapus.php">Hapus</a>
+                    <a href="edit_buku.php?id=<?= $b["id"] ?>">Edit</a>
+                    <a href="controllers/hapus_buku.php?id=<?= $b["id"]; ?>">Hapus</a>
                 </td>
             </tr>
         <?php endforeach;
         ?>
     </table>
+
+    <!-- <script src="controllers/javascript.js"></script> -->
+    <script>
+        // function hapusDialog(urlHapus) {
+        //     if (confirm("Apakah data ini akan dihapus?")) {
+        //         document.location(urlHapus)
+        //     }
+        // }
+    </script>
+
 </body>
 
 </html>
