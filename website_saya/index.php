@@ -17,5 +17,12 @@
             <li>Pinjam Buku</li>
         </a>
     </ul>
+        <a href="login.php">
+            <li>Login Disini</li>
+        </a>
+        <a href="registrasi.php">
+            <li>Registrasi</li>
+        </a>
+    </ul>
 </body>
 </html>
