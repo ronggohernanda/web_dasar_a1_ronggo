@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Login</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <form class = "box" action="index.html" method = "post" target = "_blank">
+      <span class="BorderTopBottom"></span>
+      <span class="BorderLeftRight"></span>
+      <h1> Login </h1>
+      <label for="">Username</label> <br>
+      <input type="text" name = "username" autocomplete="off" placeholder="Username" required title = "Masukkan Username"> <br>
+      <label for="">Password</label> <br>
+      <input type="password" name = "password" placeholder="********" required title = "Masukkan Password" id = "myInput"> <br>
+      <input type="checkbox" onclick = "myFunction()" title = "Lihat Password Disini">
+      <label for="">Show Password</label> <br>
+      <script>
+        require 'config.php';
+          function myFunction() {
+          var x = document.getElementById("myInput");
+          if (x.type === "password")
+          {
+            x.type = "text";
+          }
+          else
+          {
+          x.type = "password";
+          }
+          }
+      </script>
+      <input type="submit" value = "Login" click = 'alert("Apakah kamu yakin?")' title = "Submit">
+      <p>
+        Anda belum punya akun? Registrasi <a href="registrasi.php">disini</a>
+      
+    </a>
+  </p>
+    </form>
+  </body>
+</html>
